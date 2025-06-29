@@ -1,0 +1,139 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0); 
+    color: #333;
+    overflow: auto;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 550px;
+    box-sizing: border-box;
+    position: relative; 
+    overflow: hidden;
+}
+
+h1 {
+    color: #e91e63;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    position: relative;
+    z-index: 1;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    border: 2px solid #ff7080;
+    border-radius: 8px;
+    font-size: 1.1em;
+    width: 45%;
+    max-width: 200px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    border-color: #e91e63;
+    box-shadow: 0 0 8px rgba(233, 30, 99, 0.4);
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #d81b60;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.result-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff0f5;
+    border-radius: 10px;
+    border: 1px dashed #ff7080;
+    transition: all 0.5s ease-in-out;
+}
+
+.result-section h2 {
+    color: #e91e63;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+#matchPercentage {
+    font-size: 3em;
+    font-weight: bold;
+    color: #008000;
+    margin-bottom: 10px;
+}
+
+#matchMessage {
+    font-style: italic;
+    color: #555;
+}
+
+#resetBtn {
+    background-color: #e91e63;
+    margin-top: 25px;
+}
+
+#resetBtn:hover {
+    background-color: #d81b60;
+}
+
+.hidden {
+    display: auto;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+    }
+    input[type="text"] {
+        width: 80%;
+    }
+}
